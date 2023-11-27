@@ -83,3 +83,112 @@ padding: 20px;
     width: 5px;
     background-color: rgb(51, 51, 51);
 }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main-img{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-2{
+    width: 120vh;
+    height: 90vh;
+    display: flex;
+    border:none;
+    border-radius: 20%;
+}
+.imgContainer-2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    transition: opacity 1s ease-in-out;
+}
+.textContainer-2{
+    gap: 44px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    border-radius: 20%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 1s ease-in-out;
+    cursor: pointer;
+}
+.img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    transition: opacity 0.9s ease-in-out;
+}
+
+.text-2 {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+#img1{
+visibility: visible;
+}
+.progress-2{
+    margin: 2px;
+    width: 7px;
+    height: 22%;
+    border-radius:30px ;
+    transition: height all 0.7s ease;
+}
+.e1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(252, 209, 131);
+    border-radius:30px ;
+    transition: margin-top 0.8s ease-in-out;
+}
+.line-2 {
+    width: 100%;
+    height: 3%;
+    border-radius:30px ;
+    background-color:rgb(0, 110, 255);
+    transition: height 0.5s all ;
+}
+.progressContainer-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 23%;
+}
+
+.h11{
+    margin-bottom: 3%;
+}
+.h12{
+    margin-bottom: 4%;
+}
+.h13{
+    margin-bottom: 8%;
+}
+.e1{
+    transition: opacity 0.7s ease;
+    
+}
