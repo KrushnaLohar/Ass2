@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolling Pages</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="pageContainer"></div>
+
+    <script>
+        const pages = ["ayatrio-project/main.html", "imageChanger/img.html", "Scroll-Navbar/scroll.html"];
+        let currentPage = 0;
+
+        function loadNextPage() {
+            if (currentPage < pages.length) {
+                const iframe = document.createElement("iframe");
+                iframe.src = pages[currentPage];
+                document.getElementById("pageContainer").appendChild(iframe);
+                currentPage++;
+            }
+        }
+
+        // Load the first page initially
+        loadNextPage();
+
+        // Listen for scroll events
+        window.addEventListener("scroll", function() {
+            // Check if the user has scrolled to the bottom
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+                // Load the next page when reaching the bottom
+                loadNextPage();
+            }
+        });
+    </script>
+    
+</body>
+</html>
